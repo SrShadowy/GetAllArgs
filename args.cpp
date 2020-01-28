@@ -15,7 +15,6 @@ int main(int argc, char *argv[])
                std::cout << std::endl << argv[i];
                
      std::ofstream out("args.txt");
-     out << "start ";
      
            for(int i = 0; i < argc; ++i)
                out << argv[i] <<  " ";
