@@ -12,8 +12,7 @@ int main(int argc, char* argv[])
         for (int i = 0; i < argc; ++i)
             cout << endl << argv[i];
 
-        ofstream out("1a.bat");
-        out << "start ";
+        ofstream out("args.txt");
 
         for (int i = 0; i < argc; ++i)
             out << argv[i] << " ";
@@ -27,8 +26,7 @@ int main(int argc, char* argv[])
         return 1;
     }
 
-    cout << "\n\nEscrito com sucesso... Arquivo criado '1a.bat' execute"
-        << " apos fechar e abra o arquivo de renomeia novamente"
+    cout << "\n\nEscrito com sucesso... Arquivo criado 'args.txt' execute"
         << "\n\n\tAperte qualquer tecla para fecha\n";
 
    cin.get();
