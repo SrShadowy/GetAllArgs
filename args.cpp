@@ -14,7 +14,7 @@ int main(int argc, char *argv[])
           for(int i = 0; i < argc; ++i)
                std::cout << std::endl << argv[i];
                
-     std::ofstream out("1a.bat");
+     std::ofstream out("args.txt");
      out << "start ";
      
            for(int i = 0; i < argc; ++i)
@@ -29,8 +29,7 @@ int main(int argc, char *argv[])
       return 1;    
      }
      
-     std::cout << "\n\nEscrito com sucesso... Arquivo criado '1a.bat' execute" 
-     << " apos fechar e abra o arquivo de renomeia novamente"
+     std::cout << "\n\nEscrito com sucesso... Arquivo criado 'args.txt'"
      <<"\n\n\tAperte qualquer tecla para fecha\n";
      
      std::cin.get(); 
